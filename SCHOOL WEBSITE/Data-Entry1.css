@@ -1,0 +1,149 @@
+/* data_entry.css */
+.data-entry-form {
+    display: grid;
+    grid-template-columns: auto 1fr auto 1fr; /* Two columns for labels and inputs */
+    gap: 15px 20px; /* Row gap and column gap */
+    margin-bottom: 20px;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.form-group label {
+    text-align: right;
+    font-weight: bold;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%; /* Make inputs fill their grid cell */
+    box-sizing: border-box;
+    font-size: 0.9em;
+}
+
+.btn-add-student {
+    padding: 10px 15px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    grid-column: 1 / 5; /* Span all four grid columns */
+    justify-self: center; /* Center the button */
+    margin-top: 20px;
+}
+
+.btn-add-student:hover {
+    background-color: #0056b3;
+}
+
+.data-entry-list {
+    margin-top: 30px;
+}
+
+.student-data-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    font-size: 0.8em;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid #e0e0e0;
+    border-radius: 5px;
+    overflow-x: auto;
+}
+
+.student-data-table th,
+.student-data-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.student-data-table thead th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    color: #333;
+    text-transform: uppercase;
+}
+
+.student-data-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+.student-data-table th,
+.student-data-table td {
+    border: 1px solid #ddd;
+    padding: 5px; /* Bawasan ang padding */
+    text-align: left;
+    white-space: nowrap;
+    font-size: 0.7em; /* Bawasan ang font size */
+}
+
+/* data_entry.css */
+/* ... iyong kasalukuyang CSS rules ... */
+
+@media print {
+    /* Itago ang form at mga buttons sa print */
+    .data-entry-form, .data-entry-list-controls {
+        display: none !important;
+    }
+
+    /* Gawing buong lapad ang table */
+    .student-data-table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        font-size: 0.8em !important; /* Maaari mong baguhin ang laki ng font */
+    }
+
+    /* Ipakita ang lahat ng columns sa print */
+    .student-data-table th,
+    .student-data-table td {
+        border: 1px solid black !important;
+        padding: 5px !important;
+        text-align: left !important;
+        white-space: normal !important; /* Payagan ang pag-wrap ng text kung kinakailangan */
+    }
+
+    /* Tiyaking nakikita ang mga "more-column" sa print */
+    .more-column {
+        display: table-cell !important;
+    }
+}
+
+@media print {
+    /* Itago ang form at mga buttons sa print */
+    .data-entry-form, .data-entry-list-controls {
+        display: none !important;
+    }
+
+    /* Gawing buong lapad ang table */
+    .student-data-table {
+        width: 100% !important;
+        border-collapse: collapse !important;
+        font-size: 0.8em !important;
+    }
+
+    /* Ipakita ang lahat ng columns sa print */
+    .student-data-table th,
+    .student-data-table td {
+        border: 1px solid black !important;
+        padding: 5px !important;
+        text-align: left !important;
+        white-space: normal !important;
+        display: table-cell !important; /* Tiyakin na naka-display ang cells */
+        visibility: visible !important; /* Tiyakin na visible ang cells */
+    }
+
+    /* Tiyaking nakikita ang mga "more-column" sa print */
+    .more-column {
+        display: table-cell !important;
+        visibility: visible !important;
+    }
+}

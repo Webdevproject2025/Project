@@ -1,0 +1,104 @@
+/* Basic Styling for Grades Table */
+.editable-grades-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+.editable-grades-table th,
+.editable-grades-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.editable-grades-table th {
+    background-color: #f2f2f2;
+}
+
+.learners-name {
+    text-align: left;
+}
+
+.grade-input {
+    width: 60px;
+}
+
+.final-grade {
+    font-weight: bold;
+}
+
+.btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.btn-add-row {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+}
+
+.btn-save {
+    background-color: #008CBA;
+    color: white;
+    border: none;
+}
+
+.btn-print {
+    background-color: #777;
+    color: white;
+    border: none;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+/* Add more styling here to make it "maangas, maganda tignan, malinis, user-friendly" */
+/* Example: */
+body {
+    font-family: sans-serif;
+    background-color: #f4f4f4;
+    margin: 20px;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.table-responsive {
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.editable-grades-table th {
+    color: #333;
+    font-weight: bold;
+}
+
+.editable-grades-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.btn {
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.btn-add-row:hover {
+    background-color: #45a049;
+}
+
+.btn-save:hover {
+    background-color: #0056b3;
+}
+
+.btn-print:hover {
+    background-color: #555;
+}
